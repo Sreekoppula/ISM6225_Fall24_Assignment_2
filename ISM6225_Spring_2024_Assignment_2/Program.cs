@@ -94,15 +94,7 @@ namespace Assignment_2
         }
 
         // 1. Find Missing Numbers in Array
-        /// <summary>
-        /// Finds all the numbers missing from the array in the range 1 to n.
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: Help me implement a function to find missing numbers from an unsorted array from 1 to n.
-        /// Responses Received: Used index marking technique with Math.Abs and negation to track presence of numbers.
-        /// Implementation Details: Co-pilot suggested iterating and marking visited indexes negative, then collecting unmarked positions.
-        /// Adjustments: Minor logic validation added to ensure index bounds.
-        /// </remarks>
+        
         public static IList<int> FindMissingNumbers(int[] nums)
         {
             for (int i = 0; i < nums.Length; i++)
@@ -127,15 +119,7 @@ namespace Assignment_2
         }
 
         // 2. Sort Array by Parity
-        /// <summary>
-        /// Sorts the array so that even elements come before odd elements.
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: Help with sorting array by parity using two pointers.
-        /// Responses Received: Co-pilot suggested two-pointer swap logic using modulo operator.
-        /// Implementation Details: Two-pointer logic was implemented directly as suggested by Co-pilot.
-        /// Adjustments: Validated edge cases for 0s and minimum length arrays.
-        /// </remarks>
+        
         public static int[] SortArrayByParity(int[] nums)
         {
             int left = 0, right = nums.Length - 1;
@@ -156,15 +140,7 @@ namespace Assignment_2
         }
 
         // 3. Two Sum
-        /// <summary>
-        /// Finds indices of the two numbers that add up to a specific target.
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: How to solve Two Sum using dictionary/hashmap.
-        /// Responses Received: Dictionary-based lookup was suggested for O(n) time complexity.
-        /// Implementation Details: Implemented dictionary lookup for complements as suggested by Co-pilot.
-        /// Adjustments: None.
-        /// </remarks>
+        
         public static int[] TwoSum(int[] nums, int target)
         {
             Dictionary<int, int> map = new Dictionary<int, int>();
@@ -181,15 +157,7 @@ namespace Assignment_2
         }
 
         // 4. Find Maximum Product of Three Numbers
-        /// <summary>
-        /// Returns the maximum product of any three numbers in the array.
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: Asked for logic to find maximum product of three numbers from an array.
-        /// Responses Received: Co-pilot suggested sorting and checking both ends of the array.
-        /// Implementation Details: Implemented using Array.Sort and Math.Max as advised.
-        /// Adjustments: Verified handling of negatives and small arrays manually.
-        /// </remarks>
+       
         public static int MaximumProduct(int[] nums)
         {
             Array.Sort(nums);
@@ -199,30 +167,14 @@ namespace Assignment_2
         }
 
         // 5. Decimal to Binary
-        /// <summary>
-        /// Converts a decimal number to its binary string representation.
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: Convert a number to binary string in C#.
-        /// Responses Received: Co-pilot recommended using Convert.ToString(number, 2).
-        /// Implementation Details: Used method exactly as suggested.
-        /// Adjustments: None.
-        /// </remarks>
+        
         public static string DecimalToBinary(int number)
         {
             return Convert.ToString(number, 2);
         }
 
         // 6. Find Minimum in Rotated Sorted Array
-        /// <summary>
-        /// Finds the minimum value in a rotated sorted array using binary search.
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: Binary search to find minimum in rotated sorted array.
-        /// Responses Received: Co-pilot provided mid-point logic to narrow the search.
-        /// Implementation Details: Applied binary search loop and conditions exactly as described.
-        /// Adjustments: Verified logic using edge test cases.
-        /// </remarks>
+        
         public static int FindMin(int[] nums)
         {
             int left = 0, right = nums.Length - 1;
@@ -242,15 +194,7 @@ namespace Assignment_2
         }
 
         // 7. Palindrome Number
-        /// <summary>
-        /// Checks whether an integer is a palindrome (same forward and backward).
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: Check if a number is a palindrome using integer logic.
-        /// Responses Received: Co-pilot suggested reversing the digits instead of string conversion.
-        /// Implementation Details: Implemented reversal using modulo and division.
-        /// Adjustments: None.
-        /// </remarks>
+       
         public static bool IsPalindrome(int x)
         {
             if (x < 0) return false;
@@ -265,15 +209,7 @@ namespace Assignment_2
         }
 
         // 8. Fibonacci Number
-        /// <summary>
-        /// Computes the nth Fibonacci number iteratively.
-        /// </summary>
-        /// <remarks>
-        /// Prompts Used: Efficient way to calculate Fibonacci numbers without recursion.
-        /// Responses Received: Co-pilot recommended using an iterative approach with two variables.
-        /// Implementation Details: Used for-loop and temp variable swapping for O(n) time.
-        /// Adjustments: Base case for n <= 1 explicitly handled.
-        /// </remarks>
+       
         public static int Fibonacci(int n)
         {
             if (n <= 1) return n;
